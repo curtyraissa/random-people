@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 app.use(indexRouter);
 
-const port = 5000;
+const port: number = 5000;
 app.listen(port, () => {
     console.log(`Server is up and running or port: ${port}`);
 })
